@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,4 +20,14 @@ header h1 {
 }
 header p {
     font-size: 20px;
+}
+
+.pads{
+    background: lightblue;
+    width: 100%;
+}
+
+.pads > div {
+    height: 100px;
+    width: 100px;
 }
