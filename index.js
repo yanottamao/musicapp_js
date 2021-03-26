@@ -24,7 +24,10 @@ window.addEventListener("load", () => {
   });
 
   // Create a function that makes bubbles
-  const createBubbles = index => {
-    
-  }
+  const createBubbles = (index) => {
+    const bubble = document.createElement("div");
+    visual.appendChild(bubble);
+    bubble.style.backgroundColor = color[index];
+    bubble.style.animation = "jump 1s ease";
+  };
 });
