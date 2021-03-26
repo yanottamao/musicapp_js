@@ -8,7 +8,7 @@ window.addEventListener("load", () => {
     "#a01624",
     "#24a016",
     "#1632a0",
-    "#9216a0"
+    "#9216a0",
   ];
 
   console.log(sounds);
@@ -18,6 +18,13 @@ window.addEventListener("load", () => {
     pad.addEventListener("click", function () {
       sounds[index].currentTime = 0;
       sounds[index].play();
+
+      createBubbles(index);
     });
   });
+
+  // Create a function that makes bubbles
+  const createBubbles = index => {
+    
+  }
 });
