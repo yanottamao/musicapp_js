@@ -1,55 +1,69 @@
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .app {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 header h1 {
-    margin: 50px 0px 30px 0px;
-    text-align: center;
-    font-size: 40px;
+  margin: 50px 0px 30px 0px;
+  text-align: center;
+  font-size: 40px;
 }
 header p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
-.pads{
-    background: lightblue;
-    width: 100%;
-    display: flex;
-}
-
-.pads > div {
-    height: 100px;
-    width: 100px;
-    flex: 1;
-
+.pads {
+  background: lightblue;
+  width: 100%;
+  display: flex;
 }
 
 .pad1 {
-    background: #16a085;
+  background: #16a085;
 }
 .pad2 {
-    background: #a05416;
+  background: #a05416;
 }
 .pad3 {
-    background: #a01624;
+  background: #a01624;
 }
 .pad4 {
-    background: #24a016;
+  background: #24a016;
 }
 .pad5 {
-    background: #1632a0;
+  background: #1632a0;
 }
 .pad6 {
-    background: #9216a0;
+  background: #9216a0;
+}
+
+.pads > div {
+  height: 100px;
+  width: 100px;
+  flex: 1;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+  100% {
+    bottom: 0%;
+    left: 80%;
+  }
 }
